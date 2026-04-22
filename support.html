@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>客户支持</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<main class="container">
+  <div class="page-title">
+    <h1>客户支持</h1>
+    <div class="hint">预设问答 + 用户输入（静态示例；后续可接入人工/AI）。</div>
+  </div>
+
+  <section class="chat">
+    <div class="quick">
+      <h3>常见问题</h3>
+      <button type="button" data-quick-q="如何开始免费试用？">如何开始免费试用？</button>
+      <button type="button" data-quick-q="是否支持全面预算？">是否支持全面预算？</button>
+      <button type="button" data-quick-q="可以上传视频吗？">可以上传视频吗？</button>
+      <button type="button" data-quick-q="如何联系人工客服？">如何联系人工客服？</button>
+      <div class="small" style="color:var(--muted);margin-top:10px;">
+        你也可以在右侧输入自定义问题提交。
+      </div>
+    </div>
+
+    <div class="chat-box">
+      <div class="chat-head">
+        <span>在线客服</span>
+        <span class="small">示例</span>
+      </div>
+      <div class="chat-log" id="chatLog">
+        <div class="msg bot">你好！请选择常见问题，或直接输入你的问题。</div>
+      </div>
+      <div class="chat-input">
+        <input id="chatInput" type="text" placeholder="输入你的问题…" />
+        <button id="chatSend" class="btn primary" type="button">发送</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/app.js"></script>
+<script src="js/load.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>合作</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<main class="container">
+  <div class="page-title">
+    <h1>合作</h1>
+    <div class="hint">静态示例：提交需后端接收保存。</div>
+  </div>
+
+  <section class="card panel">
+    <h2 style="margin-top:0;">合作咨询</h2>
+    <form class="form" onsubmit="event.preventDefault(); alert('已提交（示例）。');">
+      <div class="grid2">
+        <div>
+          <label>姓名</label>
+          <input required placeholder="例如：张三" />
+        </div>
+        <div>
+          <label>手机号</label>
+          <input required placeholder="例如：138xxxx0000" />
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div>
+          <label>电子邮件地址</label>
+          <input type="email" required placeholder="name@example.com" />
+        </div>
+        <div>
+          <label>留言</label>
+          <input placeholder="你想合作的方向…" />
+        </div>
+      </div>
+
+      <button class="btn primary" type="submit">提交</button>
+    </form>
+
+    <hr class="sep" />
+
+    <h2>成为分销商</h2>
+    <form class="form" onsubmit="event.preventDefault(); alert('已提交分销商申请（示例）。');">
+      <div class="grid2">
+        <div>
+          <label>姓名</label>
+          <input required />
+        </div>
+        <div>
+          <label>手机号</label>
+          <input required />
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div>
+          <label>电子邮件地址</label>
+          <input type="email" required />
+        </div>
+        <div>
+          <label>公司名称</label>
+          <input required />
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div>
+          <label>业务信息（业务类型/城市/客户数量）</label>
+          <input required placeholder="例如：财税服务 / 上海 / 200" />
+        </div>
+        <div>
+          <label>银行账号</label>
+          <input required />
+        </div>
+      </div>
+
+      <div>
+        <label>地址</label>
+        <input required />
+      </div>
+
+      <div>
+        <label>上传营业执照图片</label>
+        <input type="file" accept="image/*" />
+        <div class="small" style="color:var(--muted);margin-top:6px;">静态示例不会实际上传，需后端处理。</div>
+      </div>
+
+      <button class="btn primary" type="submit">成为分销商</button>
+    </form>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/load.js"></script>
+</body>
+</html>
